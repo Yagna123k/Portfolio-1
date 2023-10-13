@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="app.js"></script>
 </head>
 <body>
+
+    <div class="Portfolio">
+        <h1 class="port"><span>Portfolio</span>.</h1>
+    </div>
+    <div class="downarrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" fill="#f14770"/></svg>
+    </div>
     <!-- header -->
     <header>
         <div class="user">
@@ -29,12 +39,23 @@
             </ul>
         </nav>
     </header>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
     <!-- home -->
     <section class="home" id="home">
         <h3>HI THERE !</h3>
         <h1>I'M <span>Yagna Kusumanchi</span></h1>
+        <h3>I'm a <span class="text"></span></h3>
         <p>Author of "Python 3.0 For Beginners," and a first-year B.Tech student at Lovely Professional University. With a coding journey that began at 14, versatile programming skills, and a passion for AI, ML, NLP, and web development, I'm a proactive learner and co-founder of SY Media, driven by a commitment to make technology accessible and engaging.</p>
         <a href="#about"><button class="btn">About me</button></a>
+        <div class="Social-media">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yagna-kusumanchi-799732237/"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+            <a target="_blank" rel="noopener" href="https://github.com/Yagna123k"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/yagna_kusumanchi/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a href="https://amzn.eu/d/3LDP1dF" target="_blank" rel="noopener"><font color="#007cc4"><i class="fab fa-amazon"></i></a></font>
+          </div>
     </section>
     <!-- About -->
     <section class="about" id="about">
@@ -48,7 +69,7 @@
                 <h3><span>qualification: </span>B.Tech 1st year</h3>
                 <h3><span>post: </span>Python Developer and Front-end Developer</h3>
                 <h3><span>language: </span>English</h3>
-                <a href="https://drive.google.com/file/d/1nSzBkq--OGNXyk79ScVNKzx7be6JNtUS/view?usp=sharing"><button class="btn">Download CV</button></a>
+                <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1nSzBkq--OGNXyk79ScVNKzx7be6JNtUS/view?usp=sharing"><button class="btn">Download CV</button></a>
             </div>
 
             <div class="counter">
@@ -99,7 +120,7 @@
                 <h1>PYTHON 3.0 FOR BEGINNERS</h1>
                 <h3>Author : <span>Yagna Kusumanchi</span></h3>
                 <p>This book is designed as a key book to cater to requirements of the first course in Python programming. It is suited for undergraduate degree students of computer science engineering and information technology as well as postgraduate students of computer applications.</p>
-                <a href="https://www.amazon.com/Python-3-0-beginners-course-programming/dp/B0BB5L27N6"><button class="btn buy">Buy Now</button></a>
+                <a target="_blank" rel="noopener" href="https://www.amazon.com/Python-3-0-beginners-course-programming/dp/B0BB5L27N6"><button class="btn buy">Buy Now</button></a>
             </div>
         </div>
     </section>
@@ -144,16 +165,36 @@
                     <h3>+91 9014976938</h3>
                     <h3>Andhra Pradesh, India</h3>
                 </div>
+
+                <div class="Social-media">
+                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yagna-kusumanchi-799732237/"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+                    <a target="_blank" rel="noopener" href="https://github.com/Yagna123k"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/yagna_kusumanchi/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+                    <a href="https://amzn.eu/d/3LDP1dF" target="_blank" rel="noopener"><font color="#007cc4"><i class="fab fa-amazon"></i></a></font>
+                  </div>
+
             </div>
 
             <form action="mailto:yagna82kb@gmail.com">
-                <input type="text" class="box inp" placeholder="Name">
-                <input type="email" class="box inp" placeholder="Email">
-                <input type="text" class="box inp" placeholder="Project">
-                <textarea name="" id="" cols="30" rows="10" placeholder="message" class="box message inp" ></textarea>
+                <input type="text" name="Name" class="box inp" placeholder="Name">
+                <input type="email" name="Email" class="box inp" placeholder="Email">
+                <input type="text" name="Project" class="box inp" placeholder="Project">
+                <textarea name="" name="Message" id="" cols="30" rows="10" placeholder="message" class="box message inp" ></textarea>
                 <button type="submit" class="btn">Send</button>
+                <span id="msg"></span>
             </form>
         </div>
     </section>
 </body>
+
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/ityped@0.0.10"></script>
+<script>
+        window.ityped.init(document.querySelector('.text'),{
+            strings: ['Front-End Developer','Python Developer','Student at LPU x Kalvium'],
+            loop: true
+        })
+</script>
+        
 </html>

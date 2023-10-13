@@ -42,6 +42,19 @@ body{
     overflow-x: hidden;
     padding-left: 35rem;
 }
+.port{
+    position: absolute;
+    left:2rem;
+    margin: 3rem;
+    border: none;
+    font-size: 4rem;
+    padding:1rem;
+    color: #fff;
+}
+
+.port span{
+    color: var(--pink);
+}
 
 header{
     position: fixed;
@@ -121,16 +134,79 @@ header .navbar ul li a:hover{
 .home h3{
     font-size: 2.5rem;
     color: #fff;
+    text-transform: none;
 }
+.text{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: var(--pink);
+}
+
 .home h1{
     font-size: 5rem;
     color: #fff;
+    margin-bottom: 1rem;
 }
 .home p{
+    margin-top: 1rem;
     font-size: 2rem;
     color: var(--gray);
-
 }
+
+
+.Social-media{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    margin-left: 5rem;
+  }
+  .Social-media a{
+    display: flex;
+    background: var(--dark);
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(241, 71, 112,0.15),
+                -6px -6px 10px -1px rgba(211, 210, 213,0.03);
+    border: 1px solid rgba(0, 124, 196, 0);
+    transition: transform 0.5s;
+  }
+  .Social-media a i{
+    color:#777;
+    transition: transform 0.5s;
+    transform: scale(2);
+  }
+  .Social-media a:hover{
+    box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(241, 71, 112,0.7),
+                      -0.5px -0.5px 0px -1px rgba(241, 71, 112,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(211, 210, 213, 0.2);
+    border-bottom: none;
+    border-right: none;
+    transform: translateY(2px);
+  }
+  .Social-media a:hover i{
+    transform: scale(1.8);
+  }
+  .Social-media a:hover .fa-amazon{
+    color: #FF9900;
+  }
+  .Social-media a:hover .fa-linkedin{
+    color: #0077B5;
+  }
+  .Social-media a:hover .fa-github{
+    color: #ffffff;
+  }
+  .Social-media a:hover .fa-instagram{
+    color: #C13584;
+  }
+
 section{
     min-height: 100vh;
     padding: 1rem;
@@ -177,10 +253,11 @@ section{
     font-size: 2rem;
     color: var(--pink);
     padding: 1rem 0;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .about .row .info h3 span{
+    font-weight: 600;
     color: var(--gray);
     padding: 0 .5rem;
 }
@@ -197,6 +274,7 @@ section{
     text-align: center;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 5px;
 }
 
 .about .row .counter .box span{
@@ -432,3 +510,56 @@ color: #fff ;
     font-weight: normal;
     margin-left: 3rem;
 }
+
+
+/* chat gpt */
+
+header .navbar ul li a {
+    /* Your existing styles */
+    transition: transform 0.3s, font-weight 0.3s;
+}
+
+header .navbar ul li a:hover {
+    background: var(--pink);
+    transform: scale(1.05);
+    font-weight: 600;
+}
+
+.skill-card {
+    /* Your existing styles */
+    transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+    background-color: rgba(241, 71, 112, 0.2);
+    transform: scale(1.1);
+}
+
+header {
+    /* Your existing styles */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.header-visible {
+    opacity: 1;
+}
+
+
+.downarrow{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+    animation: animateUser 2s linear infinite;
+}
+
+@keyframes animateUser{
+    100%{
+        bottom: -20px;
+        top: -90px;
+    }
+}
+
+
